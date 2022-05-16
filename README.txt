@@ -1,12 +1,16 @@
 READ ME 
+
 Overview
+
 This project is a final project "Easy Animator Application" ,using the classic Model-View-Controller architecture. In the model, we use two linkedhashmap lists to give the right shapes we need to use in the view. In the view, we design three kinds of view——textview, svgview and visual-view. In the controller, we use the controller to control whether to run animation of text, svg or visual.
 IMPORTANT! How to run the Final project.
 In order to run ,you need to give a command line.  “-in name-of-animation-file" -view "type-of-view" -out "where-output-show-go" -speed “integer-ticks-per-second”
 type-of-view. Choosing from “text” “svg” “visual” to get the text, svg or the visual view.
 speed. It must be an integer.
+
 Model
 Overview of model
+
 In order to implement the function, we design three important interfaces to do this. They are ShapeInterface, MotionInterface and ProcessInterface. The first two interfaces are designed to help implement the final animation needed interface—ProcessInterface.
 ShapeInterface and its implementation classes
 ShapeInterface. In this interface, we design the functionalities that the shapes need to have.And we used an abstract class to implement the ShapeInterface and implement some common functionalities. We design two kinds of shapes which are rectangle and ellipse. If other want to use this code, they can add new shape type into this by extends from abstract class or implement the ShapeInterface.
